@@ -14,7 +14,7 @@ import './styles/dark-theme.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/truck-sales">
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
