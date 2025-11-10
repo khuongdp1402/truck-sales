@@ -5,6 +5,8 @@ import Car360View from '../components/Car360View';
 import CarGallery from '../components/CarGallery';
 import CarSpecsTabs from '../components/CarSpecsTabs';
 import CarouselBrand from '../components/CarouselBrand';
+import VideoSection from '../components/VideoSection';
+import TestimonialsSection from '../components/TestimonialsSection';
 import ContactForm from '../components/ContactForm';
 import { cars } from '../mock/cars';
 import './Home.css';
@@ -42,6 +44,10 @@ const Home = () => {
       <CarSpecsTabs />
 
       <CarouselBrand />
+
+      <VideoSection />
+
+      <TestimonialsSection />
 
       <section className="about-section section">
         <div className="container">

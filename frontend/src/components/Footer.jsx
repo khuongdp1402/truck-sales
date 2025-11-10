@@ -1,12 +1,9 @@
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
-import { useTheme } from '../contexts/ThemeContext';
 import './Footer.css';
 
 const Footer = () => {
-  const { isDark } = useTheme();
-
   return (
-    <footer className={`footer ${isDark ? 'dark' : 'light'}`}>
+    <footer className="footer">
       <div className="gold-line"></div>
       <div className="footer-content">
         <div className="footer-main">

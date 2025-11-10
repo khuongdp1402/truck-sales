@@ -42,17 +42,20 @@
 .hero-content-detail h1 {
   font-size: 3.5rem;
   margin-bottom: 16px;
-  color: #E5E7EB;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .hero-subtitle-detail {
   font-size: 1.5rem;
-  color: #FBBF24;
+  color: var(--accent-gold);
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .car-detail-section {
-  background: #0F1115;
+  background: var(--bg-primary);
+  transition: background-color 0.5s ease;
 }
 
 .car-detail-content {
@@ -62,18 +65,20 @@
 }
 
 .car-info-card {
-  background: #1B1E24;
+  background: var(--bg-card);
   padding: 32px;
   border-radius: 12px;
-  border: 1px solid #2D3748;
+  border: 1px solid var(--border-color);
   margin-bottom: 32px;
+  transition: all 0.3s ease;
 }
 
 .car-detail-price {
   font-size: 2.5rem;
-  color: #FBBF24;
+  color: var(--accent-gold);
   margin-bottom: 24px;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .car-specs {
@@ -82,7 +87,8 @@
   gap: 16px;
   margin-bottom: 32px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #2D3748;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color 0.3s ease;
 }
 
 .spec-item {
@@ -92,14 +98,16 @@
 }
 
 .spec-label {
-  color: #9CA3AF;
+  color: var(--text-secondary);
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .spec-value {
-  color: #E5E7EB;
+  color: var(--text-primary);
   font-weight: 600;
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .contact-btn {
@@ -109,23 +117,26 @@
 }
 
 .car-description {
-  background: #1B1E24;
+  background: var(--bg-card);
   padding: 32px;
   border-radius: 12px;
-  border: 1px solid #2D3748;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
 .car-description h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #E5E7EB;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .car-description p {
-  color: #9CA3AF;
+  color: var(--text-secondary);
   line-height: 1.8;
   font-size: 1.1rem;
   margin-bottom: 32px;
+  transition: color 0.3s ease;
 }
 
 .car-features {
@@ -145,26 +156,29 @@
 }
 
 .car-features li {
-  color: #9CA3AF;
+  color: var(--text-secondary);
   padding: 12px;
-  background: #0F1115;
+  background: var(--bg-primary);
   border-radius: 6px;
-  border-left: 3px solid #FBBF24;
+  border-left: 3px solid var(--accent-gold);
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .car-gallery {
-  background: #1B1E24;
+  background: var(--bg-card);
   padding: 32px;
   border-radius: 12px;
-  border: 1px solid #2D3748;
+  border: 1px solid var(--border-color);
   height: fit-content;
+  transition: all 0.3s ease;
 }
 
 .car-gallery h3 {
   font-size: 1.8rem;
   margin-bottom: 24px;
-  color: #E5E7EB;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .gallery-swiper {
@@ -193,7 +207,8 @@
 .not-found h2 {
   font-size: 2rem;
   margin-bottom: 32px;
-  color: #E5E7EB;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 1024px) {

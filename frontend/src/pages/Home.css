@@ -3,7 +3,8 @@
 }
 
 .featured-cars {
-  background: #0F1115;
+  background: var(--bg-primary);
+  transition: background-color 0.5s ease;
 }
 
 .cars-grid {
@@ -14,9 +15,10 @@
 }
 
 .about-section {
-  background: linear-gradient(135deg, #0F1115 0%, #1B1E24 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   position: relative;
   overflow: hidden;
+  transition: background 0.5s ease;
 }
 
 .about-section::before {
@@ -48,12 +50,14 @@
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #9CA3AF;
+  color: var(--text-secondary);
   margin-bottom: 24px;
+  transition: color 0.5s ease;
 }
 
 .contact-section {
-  background: #0F1115;
+  background: var(--bg-primary);
+  transition: background-color 0.5s ease;
 }
 
 @media (max-width: 768px) {

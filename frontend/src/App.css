@@ -1,16 +1,8 @@
 .App {
   min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.App.dark {
-  background: #0F1115;
-  color: #E5E7EB;
-}
-
-.App.light {
-  background: #f8fafc;
-  color: #0f172a;
 }
 
 .main-content {

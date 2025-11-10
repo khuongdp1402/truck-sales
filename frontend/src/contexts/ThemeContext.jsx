@@ -13,21 +13,37 @@ export const useTheme = () => {
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     // Lấy theme từ localStorage hoặc mặc định là 'dark'
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'dark';
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      const initialTheme = savedTheme || 'dark';
+      
+      // Áp dụng class ngay lập tức để tránh flash
+      if (initialTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+      } else {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+      }
+      
+      return initialTheme;
+    }
+    return 'dark';
   });
 
   useEffect(() => {
     // Lưu theme vào localStorage
-    localStorage.setItem('theme', theme);
-    
-    // Áp dụng class cho document
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      document.documentElement.classList.remove('light');
-    } else {
-      document.documentElement.classList.add('light');
-      document.documentElement.classList.remove('dark');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', theme);
+      
+      // Áp dụng class cho documentElement
+      if (theme === 'dark') {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+      }
     }
   }, [theme]);
 

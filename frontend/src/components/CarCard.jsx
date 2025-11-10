@@ -11,6 +11,14 @@ const CarCard = ({ car }) => {
     }).format(price);
   };
 
+  const calculateDiscountPrice = (price, discount) => {
+    if (!discount || discount <= 0) return null;
+    return price * (1 - discount / 100);
+  };
+
+  const discountPrice = calculateDiscountPrice(car.price, car.discount);
+  const hasDiscount = car.discount && car.discount > 0;
+
   return (
     <motion.div
       className="car-card"
@@ -28,6 +36,11 @@ const CarCard = ({ car }) => {
             e.target.src = 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
           }}
         />
+        {hasDiscount && (
+          <div className="car-card-discount-tag">
+            <span className="discount-text">-{car.discount}%</span>
+          </div>
+        )}
         <div className="car-card-overlay">
           <span className="car-brand">{car.brand}</span>
         </div>
@@ -35,7 +48,16 @@ const CarCard = ({ car }) => {
       <div className="car-card-content">
         <h3 className="car-card-name">{car.name}</h3>
         <p className="car-card-year">Năm: {car.year}</p>
-        <p className="car-card-price">{formatPrice(car.price)}</p>
+        <div className="car-card-price-container">
+          {hasDiscount ? (
+            <>
+              <p className="car-card-price-old">{formatPrice(car.price)}</p>
+              <p className="car-card-price">{formatPrice(discountPrice)}</p>
+            </>
+          ) : (
+            <p className="car-card-price">{formatPrice(car.price)}</p>
+          )}
+        </div>
         <Link to={`/cars/${car.id}`} className="btn-secondary car-card-btn">
           Chi tiết
         </Link>

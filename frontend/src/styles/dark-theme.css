@@ -6,7 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* Dark theme (default) */
+:root,
+:root.dark {
   --bg-primary: #0F1115;
   --bg-secondary: #1B1E24;
   --bg-card: #1B1E24;
@@ -17,10 +19,12 @@
   --border-color: #2D3748;
   --shadow-gold: 0 0 10px rgba(251, 191, 36, 0.3);
   --shadow-gold-strong: 0 0 20px rgba(251, 191, 36, 0.5);
+  --navbar-bg: rgba(0, 0, 0, 0.7);
+  --navbar-bg-scrolled: rgba(15, 17, 21, 0.95);
 }
 
 /* Light theme variables */
-.light {
+:root.light {
   --bg-primary: #f8fafc;
   --bg-secondary: #ffffff;
   --bg-card: #ffffff;
@@ -31,6 +35,8 @@
   --border-color: #e2e8f0;
   --shadow-gold: 0 0 10px rgba(37, 99, 235, 0.3);
   --shadow-gold-strong: 0 0 20px rgba(37, 99, 235, 0.5);
+  --navbar-bg: rgba(248, 250, 252, 0.9);
+  --navbar-bg-scrolled: rgba(255, 255, 255, 0.95);
 }
 
 * {
@@ -169,7 +175,7 @@ input::placeholder, textarea::placeholder {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   text-align: center;
-  color: var(--text-primary);
+  color: #fe0000;
 }
 
 .section-title span {

@@ -6,6 +6,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import ContactForm from '../components/ContactForm';
+import Car360View from '../components/Car360View';
 import { cars } from '../mock/cars';
 import './CarDetail.css';
 
@@ -148,6 +149,13 @@ const CarDetail = () => {
           </div>
         </div>
       </section>
+
+      {car.panorama360Url && (
+        <Car360View 
+          panorama360Url={car.panorama360Url} 
+          carName={car.name}
+        />
+      )}
 
       {showContactModal && (
         <div className="modal-overlay" onClick={() => setShowContactModal(false)}>
