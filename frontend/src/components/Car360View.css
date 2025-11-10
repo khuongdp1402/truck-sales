@@ -1,0 +1,79 @@
+.car-360-section {
+  background: #0F1115;
+  padding: 80px 0;
+}
+
+.car-360-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #2D3748;
+  transition: all 0.3s ease;
+}
+
+.car-360-container:hover {
+  border-color: #FBBF24;
+  box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
+}
+
+.car-360-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: #1B1E24;
+}
+
+.car-360-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-360-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease;
+}
+
+.car-360-container:hover .car-360-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.rotate-icon {
+  color: #FBBF24;
+  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.5));
+}
+
+.rotate-text {
+  color: #E5E7EB;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .car-360-image {
+    height: 300px;
+  }
+  
+  .rotate-icon {
+    font-size: 36px;
+  }
+  
+  .rotate-text {
+    font-size: 1rem;
+  }
+}
+
