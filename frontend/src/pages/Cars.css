@@ -3,19 +3,22 @@
 }
 
 .cars-hero {
-  background: linear-gradient(135deg, #0F1115 0%, #1B1E24 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   padding: 80px 0 40px;
   text-align: center;
+  transition: background 0.5s ease;
 }
 
 .page-title {
   font-size: 3rem;
-  color: #E5E7EB;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .cars-section {
-  background: #0F1115;
+  background: var(--bg-primary);
+  transition: background-color 0.5s ease;
 }
 
 .filter-bar {
@@ -24,10 +27,11 @@
   align-items: flex-end;
   margin-bottom: 32px;
   padding: 24px;
-  background: #1B1E24;
+  background: var(--bg-card);
   border-radius: 8px;
-  border: 1px solid #2D3748;
+  border: 1px solid var(--border-color);
   flex-wrap: wrap;
+  transition: all 0.3s ease;
 }
 
 .filter-group {
@@ -39,15 +43,16 @@
 }
 
 .filter-group label {
-  color: #E5E7EB;
+  color: var(--text-primary);
   font-weight: 500;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .filter-select {
-  background: #0F1115;
-  border: 2px solid #2D3748;
-  color: #E5E7EB;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
   padding: 12px 16px;
   border-radius: 4px;
   font-size: 16px;
@@ -58,8 +63,8 @@
 
 .filter-select:focus {
   outline: none;
-  border-color: #FBBF24;
-  box-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-gold);
 }
 
 .filter-reset {
@@ -72,8 +77,9 @@
 }
 
 .results-count {
-  color: #9CA3AF;
+  color: var(--text-secondary);
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .cars-grid {
@@ -85,8 +91,9 @@
 .no-results {
   text-align: center;
   padding: 60px 20px;
-  color: #9CA3AF;
+  color: var(--text-secondary);
   font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 768px) {

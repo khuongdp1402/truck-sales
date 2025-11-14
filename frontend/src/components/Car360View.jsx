@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FiRotateCw } from 'react-icons/fi';
 import './Car360View.css';
@@ -7,52 +7,77 @@ const Car360View = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [rotation, setRotation] = useState(0);
   const [showOverlay, setShowOverlay] = useState(true);
-  const [startX, setStartX] = useState(0);
-  const [lastRotation, setLastRotation] = useState(0);
+  const startXRef = useRef(0);
+  const lastRotationRef = useRef(0);
+  const containerRef = useRef(null);
 
   const handleMouseDown = (e) => {
     setIsDragging(true);
-    setStartX(e.clientX);
-    setLastRotation(rotation);
+    startXRef.current = e.clientX;
+    lastRotationRef.current = rotation;
     setShowOverlay(false);
     e.preventDefault();
   };
 
   const handleTouchStart = (e) => {
     setIsDragging(true);
-    setStartX(e.touches[0].clientX);
-    setLastRotation(rotation);
+    startXRef.current = e.touches[0].clientX;
+    lastRotationRef.current = rotation;
     setShowOverlay(false);
     e.preventDefault();
   };
 
-  const handleMouseMove = (e) => {
+  useEffect(() => {
     if (!isDragging) return;
-    const deltaX = e.clientX - startX;
-    const newRotation = lastRotation + deltaX * 0.5;
-    setRotation(newRotation);
-  };
 
-  const handleTouchMove = (e) => {
-    if (!isDragging || !e.touches[0]) return;
-    const deltaX = e.touches[0].clientX - startX;
-    const newRotation = lastRotation + deltaX * 0.5;
-    setRotation(newRotation);
-    e.preventDefault();
-  };
+    const handleMouseMove = (e) => {
+      const deltaX = e.clientX - startXRef.current;
+      const newRotation = lastRotationRef.current + deltaX * 0.5;
+      setRotation(newRotation);
+    };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-    setLastRotation(rotation);
-  };
+    const handleMouseUp = () => {
+      lastRotationRef.current = rotation;
+      setIsDragging(false);
+    };
 
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-    setLastRotation(rotation);
-  };
+    const handleTouchMove = (e) => {
+      if (!e.touches[0]) return;
+      const deltaX = e.touches[0].clientX - startXRef.current;
+      const newRotation = lastRotationRef.current + deltaX * 0.5;
+      setRotation(newRotation);
+      e.preventDefault();
+    };
 
-  // Image URL - using a car image that works well for 360 effect
-  const imageUrl = "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
+    const handleTouchEnd = () => {
+      lastRotationRef.current = rotation;
+      setIsDragging(false);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [isDragging, rotation]);
+
+  useEffect(() => {
+    if (!isDragging && !showOverlay) {
+      const timer = setTimeout(() => {
+        setShowOverlay(true);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [isDragging, showOverlay]);
+
+  // Image URL - using a real Kimlong bus image for 360 effect
+      const imageUrl = "https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg";
 
   return (
     <section className="car-360-section section">
@@ -68,16 +93,12 @@ const Car360View = () => {
         </motion.h2>
         
         <motion.div
+          ref={containerRef}
           className="car-360-container"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
         >
           <div 
             className="car-360-image"
@@ -97,9 +118,9 @@ const Car360View = () => {
                 src={imageUrl}
                 alt="Car 360 view"
                 draggable="false"
-                onError={(e) => {
-                  e.target.src = 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
-                }}
+                    onError={(e) => {
+                      e.target.src = 'https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg';
+                    }}
               />
             </div>
             {showOverlay && (

@@ -59,19 +59,19 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="section-title">
-              Về <span>AutoLux</span>
+              Về <span>LuxCar</span>
             </h2>
             <div className="about-text">
               <p>
-                AutoLux là đại lý xe hơi cao cấp hàng đầu, chuyên cung cấp các dòng xe 
-                sang trọng và đẳng cấp từ các thương hiệu nổi tiếng thế giới. Với hơn 
-                10 năm kinh nghiệm trong ngành, chúng tôi cam kết mang đến cho khách hàng 
-                những trải nghiệm mua sắm và dịch vụ tốt nhất.
+                LuxCar là đại lý chuyên cung cấp xe tải và xe khách hàng đầu, đối tác 
+                chính thức của Hyundai và Kimlong 99. Với hơn 10 năm kinh nghiệm trong 
+                ngành vận tải, chúng tôi cam kết mang đến cho khách hàng những sản phẩm 
+                chất lượng cao và dịch vụ chăm sóc tốt nhất.
               </p>
               <p>
                 Đội ngũ chuyên viên tư vấn giàu kinh nghiệm của chúng tôi luôn sẵn sàng 
-                hỗ trợ bạn tìm được chiếc xe phù hợp nhất với nhu cầu và ngân sách. 
-                Từ xe thể thao hiệu suất cao đến sedan sang trọng, AutoLux có tất cả.
+                hỗ trợ bạn tìm được chiếc xe phù hợp nhất với nhu cầu kinh doanh và ngân sách. 
+                Từ xe tải nhỏ đến xe khách lớn, từ Hyundai đến Kimlong 99, LuxCar có tất cả.
               </p>
             </div>
           </motion.div>

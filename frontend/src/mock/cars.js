@@ -1,110 +1,127 @@
 export const cars = [
   {
     id: 1,
-    name: "BMW i8",
-    brand: "BMW",
-    year: 2020,
-    price: 75000,
-    discount: 15,
-    description: "Mẫu xe thể thao sang trọng với thiết kế tương lai. BMW i8 kết hợp hiệu suất mạnh mẽ với công nghệ hybrid tiên tiến, mang đến trải nghiệm lái xe đẳng cấp.",
-    image: "/demo-images/bmw-i8.jpg",
-    panorama360Url: "/demo-images/autoshop_01_4k.jpg",
-    features: ["Hybrid Engine", "All-Wheel Drive", "Carbon Fiber Body", "Digital Cockpit"]
+    name: "Hyundai HD120",
+    brand: "Hyundai",
+    year: 2023,
+    price: 45000,
+    description: "Xe tải Hyundai HD120 với tải trọng 1.2 tấn, phù hợp cho vận chuyển hàng hóa trong thành phố. Động cơ diesel tiết kiệm nhiên liệu, cabin rộng rãi và tiện nghi.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    features: ["Tải trọng 1.2 tấn", "Động cơ Diesel", "Cabin tiện nghi", "Tiết kiệm nhiên liệu"]
   },
   {
     id: 2,
-    name: "Mercedes C300 AMG",
-    brand: "Mercedes",
-    year: 2022,
+    name: "Hyundai HD210",
+    brand: "Hyundai",
+    year: 2023,
     price: 68000,
-    discount: 10,
-    description: "Dòng sedan cao cấp với cảm giác lái mượt mà. Mercedes C300 AMG sở hữu nội thất sang trọng và công nghệ an toàn hàng đầu.",
-    image: "/demo-images/mercedes-c300.jpg",
-    panorama360Url: null,
-    features: ["AMG Package", "Panoramic Sunroof", "MBUX Infotainment", "Active Safety"]
+    description: "Xe tải Hyundai HD210 với tải trọng 2.1 tấn, lý tưởng cho vận chuyển hàng hóa cỡ trung. Thiết kế hiện đại, an toàn và bền bỉ.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    features: ["Tải trọng 2.1 tấn", "Thiết kế hiện đại", "Hệ thống an toàn", "Động cơ mạnh mẽ"]
   },
   {
     id: 3,
-    name: "Audi A7 Sportback",
-    brand: "Audi",
-    year: 2021,
-    price: 72000,
-    discount: 20,
-    description: "Thiết kế coupe kết hợp hiệu suất mạnh mẽ. Audi A7 Sportback là sự kết hợp hoàn hảo giữa phong cách và hiệu năng.",
-    image: "/demo-images/audi-a7.jpg",
-    panorama360Url: "/demo-images/autoshop_01_4k.jpg",
-    features: ["Quattro AWD", "Virtual Cockpit", "Matrix LED", "Premium Sound"]
+    name: "Hyundai County",
+    brand: "Hyundai",
+    year: 2024,
+    price: 55000,
+    description: "Xe khách Hyundai County với 29 chỗ ngồi, phù hợp cho vận chuyển hành khách. Nội thất sang trọng, tiện nghi và an toàn.",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    features: ["29 chỗ ngồi", "Nội thất sang trọng", "Điều hòa", "Hệ thống giải trí"]
   },
   {
     id: 4,
-    name: "Porsche 911 Carrera",
-    brand: "Porsche",
-    year: 2023,
+    name: "Hyundai Universe",
+    brand: "Hyundai",
+    year: 2024,
     price: 125000,
-    discount: 0,
-    description: "Biểu tượng của sự hoàn hảo trong ngành công nghiệp xe thể thao. Porsche 911 Carrera mang đến hiệu suất đỉnh cao.",
-    image: "/demo-images/porsche-911.jpg",
-    panorama360Url: "/demo-images/autoshop_01_4k.jpg",
-    features: ["Twin-Turbo Engine", "PDK Transmission", "Sport Chrono", "Premium Interior"]
+    description: "Xe khách cao cấp Hyundai Universe với 45 chỗ ngồi, phù hợp cho các tuyến đường dài. Tiện nghi cao cấp, an toàn tuyệt đối.",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    features: ["45 chỗ ngồi", "Nội thất cao cấp", "Ghế ngả", "WiFi & USB"]
   },
   {
     id: 5,
-    name: "Tesla Model S",
-    brand: "Tesla",
+    name: "Kimlong 99 KL-120",
+    brand: "Kimlong 99",
     year: 2023,
-    price: 95000,
-    discount: 5,
-    description: "Tương lai của ngành công nghiệp xe hơi. Tesla Model S với công nghệ tự lái và hiệu suất điện vượt trội.",
-    image: "/demo-images/tesla-model-s.jpg",
-    panorama360Url: null,
-    features: ["Autopilot", "Supercharging", "Glass Roof", "Minimalist Design"]
+    price: 38000,
+    description: "Xe tải Kimlong 99 KL-120 với tải trọng 1.2 tấn, giá cả hợp lý. Phù hợp cho các doanh nghiệp vừa và nhỏ.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    features: ["Tải trọng 1.2 tấn", "Giá cả hợp lý", "Tiết kiệm nhiên liệu", "Dễ bảo trì"]
   },
   {
     id: 6,
-    name: "Lexus LS 500",
-    brand: "Lexus",
-    year: 2022,
-    price: 88000,
-    discount: 12,
-    description: "Sự sang trọng đích thực trong từng chi tiết. Lexus LS 500 là đỉnh cao của nghệ thuật chế tác xe hơi Nhật Bản.",
-    image: "/demo-images/lexus-ls500.jpg",
-    panorama360Url: null,
-    features: ["V6 Twin-Turbo", "Mark Levinson Audio", "Executive Seating", "Advanced Safety"]
+    name: "Kimlong 99 KL-210",
+    brand: "Kimlong 99",
+    year: 2023,
+    price: 52000,
+    description: "Xe tải Kimlong 99 KL-210 với tải trọng 2.1 tấn, động cơ mạnh mẽ. Thiết kế gọn gàng, phù hợp đô thị.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    features: ["Tải trọng 2.1 tấn", "Động cơ mạnh mẽ", "Thiết kế gọn gàng", "Bền bỉ"]
   },
   {
     id: 7,
-    name: "Jaguar F-Type",
-    brand: "Jaguar",
-    year: 2022,
-    price: 78000,
-    discount: 18,
-    description: "Sự kết hợp hoàn hảo giữa sức mạnh và vẻ đẹp. Jaguar F-Type là hiện thân của tinh thần thể thao Anh Quốc.",
-    image: "/demo-images/jaguar-ftype.jpg",
-    panorama360Url: null,
-    features: ["Supercharged V6", "Active Exhaust", "Meridian Audio", "Performance Seats"]
+    name: "Kimlong 99 Bus Giường Nằm",
+    brand: "Kimlong 99",
+    year: 2024,
+    price: 125000,
+    description: "Bus giường nằm KIMLONG 99 với thiết kế hiện đại, phù hợp cho các tuyến đường dài. Tiện nghi cao cấp, an toàn và thoải mái.",
+    image: "https://kimlongmotor.com.vn/images/san_pham/KIMLONG_bus_giuong_nam.png",
+    features: ["Giường nằm", "Nội thất cao cấp", "Điều hòa", "Hệ thống giải trí"]
   },
   {
     id: 8,
-    name: "Maserati Ghibli",
-    brand: "Maserati",
-    year: 2021,
-    price: 82000,
-    discount: 0,
-    description: "Phong cách Ý đích thực với hiệu suất mạnh mẽ. Maserati Ghibli mang đến trải nghiệm lái xe đầy cảm xúc.",
-    image: "/demo-images/maserati-ghibli.jpg",
-    panorama360Url: null,
-    features: ["V6 Engine", "Skyhook Suspension", "Harman Kardon", "Italian Craftsmanship"]
+    name: "Kimlong 99 Bus 29 Chỗ",
+    brand: "Kimlong 99",
+    year: 2024,
+    price: 68000,
+    description: "Bus ghế ngồi KIMLONG 99 với 29 chỗ ngồi, phù hợp cho vận chuyển hành khách. Giá cả hợp lý, tiết kiệm nhiên liệu.",
+    image: "https://kimlongmotor.com.vn/images/san_pham/KIMLONG_29-N29/KIMLONG_bus_29_cho_-_vang_decal.png",
+    features: ["29 chỗ ngồi", "Giá cả hợp lý", "Tiết kiệm nhiên liệu", "Điều hòa"]
+  },
+  {
+    id: 9,
+    name: "Kimlong 99 Bus 47 Chỗ",
+    brand: "Kimlong 99",
+    year: 2024,
+    price: 95000,
+    description: "Bus ghế ngồi KIMLONG 99 với 47 chỗ ngồi, phù hợp cho các tuyến đường dài. Nội thất sang trọng, tiện nghi.",
+    image: "https://kimlongmotor.com.vn/images/san_pham/Bus_ghe_ngoi_KIMLONG_99/xe_47_ghe_ngoi_Kimlong_99_-_nen_xam__1.png",
+    features: ["47 chỗ ngồi", "Nội thất sang trọng", "Điều hòa", "Hệ thống giải trí"]
+  },
+  {
+    id: 10,
+    name: "Kimlong X9 Minibus",
+    brand: "Kimlong 99",
+    year: 2024,
+    price: 45000,
+    description: "Minibus KIMLONG X9 với thiết kế gọn nhẹ, phù hợp cho vận chuyển hành khách trong thành phố. Tiết kiệm nhiên liệu, dễ vận hành.",
+    image: "https://kimlongmotor.com.vn/images/hinh_anh/XE_KIM_LONG_X9_2.jpg",
+    features: ["Thiết kế gọn nhẹ", "Tiết kiệm nhiên liệu", "Dễ vận hành", "Phù hợp đô thị"]
+  },
+  {
+    id: 11,
+    name: "Kimlong 99 Bus",
+    brand: "Kimlong 99",
+    year: 2024,
+    price: 88000,
+    description: "Bus KIMLONG 99 với thiết kế hiện đại, phù hợp cho các tuyến đường dài. Tiện nghi, an toàn và bền bỉ.",
+    image: "https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg",
+    features: ["Thiết kế hiện đại", "Tiện nghi", "An toàn", "Bền bỉ"]
+  },
+  {
+    id: 12,
+    name: "Kimlong 99 Bus Premium",
+    brand: "Kimlong 99",
+    year: 2024,
+    price: 110000,
+    description: "Bus KIMLONG 99 Premium với thiết kế cao cấp, phù hợp cho các tuyến đường dài. Nội thất sang trọng, tiện nghi đầy đủ.",
+    image: "https://kimlongmotor.com.vn/images/hinh_anh/WEB-1114-moi.jpg",
+    features: ["Thiết kế cao cấp", "Nội thất sang trọng", "Tiện nghi đầy đủ", "An toàn tuyệt đối"]
   }
 ];
 
 export const brands = [
-  { name: "BMW", logo: "/demo-images/brands/bmw-logo.png" },
-  { name: "Mercedes", logo: "/demo-images/brands/mercedes-logo.png" },
-  { name: "Audi", logo: "/demo-images/brands/audi-logo.png" },
-  { name: "Porsche", logo: "/demo-images/brands/porsche-logo.png" },
-  { name: "Tesla", logo: "/demo-images/brands/tesla-logo.png" },
-  { name: "Lexus", logo: "/demo-images/brands/lexus-logo.png" },
-  { name: "Jaguar", logo: "/demo-images/brands/jaguar-logo.png" },
-  { name: "Maserati", logo: "/demo-images/brands/maserati-logo.png" }
+  { name: "Hyundai", logo: "/demo-images/brands/hyundai-logo.png" },
+  { name: "Kimlong 99", logo: "/demo-images/brands/kimlong-logo.png" }
 ];
-

@@ -10,14 +10,14 @@ const CarSpecsTabs = () => {
       id: 0,
       label: 'Thông số kỹ thuật',
       content: {
-        image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg',
         specs: [
-          { label: 'Công suất', value: '450 HP' },
-          { label: 'Động cơ', value: 'V8 Twin-Turbo' },
-          { label: 'Tốc độ tối đa', value: '305 km/h' },
-          { label: 'Dung tích bình xăng', value: '75L' },
-          { label: 'Hộp số', value: '8 cấp tự động' },
-          { label: 'Dẫn động', value: 'AWD' },
+          { label: 'Tải trọng', value: '1.2 - 3.5 tấn' },
+          { label: 'Động cơ', value: 'Diesel 2.5L - 4.0L' },
+          { label: 'Công suất', value: '120 - 180 HP' },
+          { label: 'Dung tích bình xăng', value: '80L - 150L' },
+          { label: 'Hộp số', value: '5-6 cấp' },
+          { label: 'Tiêu thụ nhiên liệu', value: '8-12L/100km' },
         ]
       }
     },
@@ -25,14 +25,13 @@ const CarSpecsTabs = () => {
       id: 1,
       label: 'Màu sắc',
       content: {
-        image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://kimlongmotor.com.vn/images/hinh_anh/WEB-1114-moi.jpg',
         colors: [
-          { name: 'Đen bóng', hex: '#000000' },
-          { name: 'Trắng ngọc trai', hex: '#F5F5F5' },
+          { name: 'Trắng', hex: '#FFFFFF' },
           { name: 'Xám bạc', hex: '#808080' },
-          { name: 'Xanh đậm', hex: '#1E3A8A' },
-          { name: 'Đỏ sang trọng', hex: '#DC2626' },
-          { name: 'Vàng vàng', hex: '#FBBF24' },
+          { name: 'Xanh dương', hex: '#1E3A8A' },
+          { name: 'Đỏ', hex: '#DC2626' },
+          { name: 'Vàng', hex: '#FBBF24' },
         ]
       }
     },
@@ -40,12 +39,12 @@ const CarSpecsTabs = () => {
       id: 2,
       label: 'Dòng xe',
       content: {
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg',
         variants: [
-          { name: 'Luxury', price: '$75,000', features: ['Nội thất da cao cấp', 'Hệ thống âm thanh Premium', 'Ghế massage'] },
-          { name: 'Sport', price: '$85,000', features: ['Động cơ tăng áp', 'Hệ thống treo thể thao', 'Phanh carbon-ceramic'] },
-          { name: 'Hybrid', price: '$90,000', features: ['Công nghệ hybrid', 'Tiết kiệm nhiên liệu', 'Giảm phát thải'] },
-          { name: 'Performance', price: '$100,000', features: ['Hiệu suất tối đa', 'Aerodynamics nâng cao', 'Track mode'] },
+          { name: 'Xe tải nhỏ', price: '$38,000 - $45,000', features: ['Tải trọng 1.2 tấn', 'Tiết kiệm nhiên liệu', 'Phù hợp đô thị'] },
+          { name: 'Xe tải trung', price: '$52,000 - $68,000', features: ['Tải trọng 2.1 tấn', 'Động cơ mạnh mẽ', 'Thùng hàng rộng'] },
+          { name: 'Xe tải lớn', price: '$75,000', features: ['Tải trọng 3.5 tấn', 'Cabin tiện nghi', 'Hệ thống phanh ABS'] },
+          { name: 'Xe khách', price: '$55,000 - $125,000', features: ['29-45 chỗ ngồi', 'Nội thất sang trọng', 'Điều hòa & WiFi'] },
         ]
       }
     }

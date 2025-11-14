@@ -6,33 +6,33 @@ const CarGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Car Gallery 1'
+      src: 'https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg',
+      alt: 'Bus KIMLONG 99'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Car Gallery 2'
+      src: 'https://kimlongmotor.com.vn/images/hinh_anh/WEB-1114-moi.jpg',
+      alt: 'Bus KIMLONG 99 Premium'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Car Gallery 3'
+      src: 'https://kimlongmotor.com.vn/images/san_pham/KIMLONG_bus_giuong_nam.png',
+      alt: 'Bus giường nằm KIMLONG 99'
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Car Gallery 4'
+      src: 'https://kimlongmotor.com.vn/images/san_pham/Bus_ghe_ngoi_KIMLONG_99/xe_47_ghe_ngoi_Kimlong_99_-_nen_xam__1.png',
+      alt: 'Bus ghế ngồi KIMLONG 99 - 47 chỗ'
     },
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Car Gallery 5'
+      src: 'https://kimlongmotor.com.vn/images/hinh_anh/XE_KIM_LONG_X9_2.jpg',
+      alt: 'Minibus KIMLONG X9'
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Car Gallery 6'
+      src: 'https://kimlongmotor.com.vn/images/san_pham/KIMLONG_29-N29/KIMLONG_bus_29_cho_-_vang_decal.png',
+      alt: 'Bus ghế ngồi KIMLONG 29 chỗ'
     }
   ];
 

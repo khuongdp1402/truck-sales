@@ -10,21 +10,21 @@ import './Hero.css';
 const heroSlides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    title: 'Khám phá dòng xe đẳng cấp',
-    subtitle: 'Trải nghiệm sự sang trọng trên từng chi tiết'
+    image: 'https://kimlongmotor.com.vn/images/san_pham/bus/Web_-_KLM.jpg',
+    title: 'Xe tải & Xe khách chất lượng cao',
+    subtitle: 'Hyundai và Kimlong 99 - Đối tác tin cậy cho doanh nghiệp'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    title: 'Xe thể thao hiệu suất cao',
-    subtitle: 'Công nghệ tiên tiến, hiệu năng vượt trội'
+    image: 'https://kimlongmotor.com.vn/images/hinh_anh/WEB-1114-moi.jpg',
+    title: 'Xe tải đa dạng tải trọng',
+    subtitle: 'Từ 1.2 tấn đến 3.5 tấn, phù hợp mọi nhu cầu vận chuyển'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    title: 'Đẳng cấp sang trọng',
-    subtitle: 'Thiết kế tinh tế, chất lượng đỉnh cao'
+    image: 'https://kimlongmotor.com.vn/images/san_pham/KIMLONG_bus_giuong_nam.png',
+    title: 'Xe khách tiện nghi',
+    subtitle: 'Từ 29 đến 47 chỗ, phục vụ mọi tuyến đường'
   }
 ];
 

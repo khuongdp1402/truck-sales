@@ -2,16 +2,18 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 40px;
-  background: #1B1E24;
+  background: var(--bg-card);
   border-radius: 12px;
-  border: 1px solid #2D3748;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
 .contact-form-title {
   text-align: center;
   margin-bottom: 32px;
-  color: #E5E7EB;
+  color: var(--text-primary);
   font-size: 2rem;
+  transition: color 0.3s ease;
 }
 
 .contact-form {
@@ -27,9 +29,10 @@
 }
 
 .form-group label {
-  color: #E5E7EB;
+  color: var(--text-primary);
   font-weight: 500;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .form-actions {

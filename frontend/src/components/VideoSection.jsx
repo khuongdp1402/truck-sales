@@ -43,7 +43,7 @@ const VideoSection = () => {
             <div className="video-wrapper">
               <iframe
                 src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
-                title="AutoLux Video Experience"
+                title="LuxCar Video Experience"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -1,8 +1,9 @@
 .admin-page {
   padding-top: 100px;
   min-height: 100vh;
-  background: #0F1115;
+  background: var(--bg-primary);
   padding-bottom: 80px;
+  transition: background-color 0.5s ease;
 }
 
 .admin-header {
@@ -16,8 +17,9 @@
 
 .admin-title {
   font-size: 2.5rem;
-  color: #E5E7EB;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .admin-form {
@@ -29,7 +31,8 @@
 
 .admin-form h2 {
   margin-bottom: 8px;
-  color: #E5E7EB;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 768px) {

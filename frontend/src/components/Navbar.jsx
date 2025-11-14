@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">AutoLux</span>
+          <span className="logo-text">LuxCar</span>
         </Link>
         
         <ul className="navbar-menu">
